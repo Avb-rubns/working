@@ -1,4 +1,4 @@
-export default {
+const dark  = {
   title: 'dark',
   colors: {
     body: {
@@ -25,3 +25,4 @@ export default {
     }
   }
 }
+export default dark
