@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'wouter'
 import { FiToggleLeft } from 'react-icons/fi'
 import { NavbarStyled } from './navbar.styles'
 
