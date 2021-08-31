@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container, RectangleB, RectangleG, RectangleR, Rectangle } from './container.styles'
+import { Card, Container, Rectangle } from './container.styles'
 
 
 export default function NotFound(props) {
