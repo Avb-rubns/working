@@ -11,11 +11,9 @@ const THEMES = {
   Light
 }
 ReactDOM.render(
-  <React.Suspense fallback = {<div>Cargando ... </div>}>
     <ThemeProvider theme={THEMES.Light}>
       <GlobalStyle />
       <Router />
-    </ThemeProvider>
-  </React.Suspense>,
+    </ThemeProvider>,
     document.getElementById('root')
 )

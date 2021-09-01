@@ -11,19 +11,19 @@ import {
 
 export default function Found() {
     return(
-        <>
-        <Template>
-            <ContainerLading
-            git= "https://github.com/Avb-rubns"
-            link="https://www.linkedin.com/in/rub%C3%A9n-s%C3%A1nchez-rugerio-025588205/"
-           >
-             <FiMail />
-             <FiGithub />
-             <FiLinkedin />
-             </ContainerLading>
-            <NotFound text="Contenido no disponible por el momento"/>
-        </Template>
-        </>
+        <React.Suspense fallback = {<div>Cargando ... </div>}>
+            <Template>
+                <ContainerLading
+                git= "https://github.com/Avb-rubns"
+                link="https://www.linkedin.com/in/rub%C3%A9n-s%C3%A1nchez-rugerio-025588205/"
+                >
+                    <FiMail />
+                    <FiGithub />
+                    <FiLinkedin />
+                    </ContainerLading>
+                <NotFound text="Contenido no disponible por el momento"/>
+            </Template>
+        </React.Suspense>
     )
     
 }
