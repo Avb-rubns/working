@@ -21,7 +21,7 @@ export default function Found() {
              <FiGithub />
              <FiLinkedin />
              </ContainerLading>
-            <NotFound text="Estamos Trabajando"/>
+            <NotFound text="Contenido no disponible por el momento"/>
         </Template>
         </>
     )
