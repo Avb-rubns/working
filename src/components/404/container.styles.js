@@ -27,7 +27,7 @@ align-items: center;
     }
     @media all and (max-width: 768px) {
         h1 {
-            font-size: 28px;
+            font-size: 3rem;
         }
     }
     }
@@ -37,13 +37,11 @@ align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    &&& > section{
-        background: red;
-    }
 }
 @media all and (max-width: 768px) {
         h1 {
-            font-size: 28px;
+            font-size: 24px;
+            text-align: center;
         }
   
     }
@@ -53,26 +51,30 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 2px;
-height: 90px;
-width: calc( 100vw - calc(100vw * .80));
+height: 60%;
+width: calc( 100vw - calc(100vw * .85));
 background: ${({ theme }) => theme.colors.tag.background};
 h1{
     font-family: 'NotoSans SC Bold';
     font-size: 64px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 812px) {
         h1 {
-            font-size: 28px;
+            font-size: 20px;
         }
   
     }
 `
 
-export const Rectangle = styled.div(props => ( {
-    background: 'var('+props.background+')',
-    height: '10px',
-    width: props.size ? props.size  : '200px' ,
-    margin: '10px 10px',
-    padding: '0 10px',
-    borderRadius:'4px',
-}))
+export const Rectangle = styled.div`
+    background:${props => props.background ? 'var('+props.background+')'  : 'var(--main-color)' };
+    height: 10px;
+    width: ${props => props.size ? props.size+'px'  : '200px' };
+    margin: 10px 10px;
+    padding: 0 10px;
+    border-radius:4px;
+    
+    @media all and (max-width:768px){
+        width: ${props => props.size ? 'calc('+ props.size/3+'px )'  : 200/3+'px' };
+    }
+`

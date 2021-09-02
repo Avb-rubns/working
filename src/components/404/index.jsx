@@ -9,29 +9,29 @@ export default function NotFound(props) {
             <article>
                 <h1>&lt;/&gt;</h1>
                 <section>  
-                    <Rectangle background="--black-light" size="50px"/>
-                    <Rectangle background="--main-color" size="150px" />
-                    <Rectangle background="--gray-dark" size="350px"/>
+                    <Rectangle background="--black-light" size="50"/>
+                    <Rectangle background="--main-color" size="150" />
+                    <Rectangle background="--gray-dark" size="350"/>
                     <Rectangle background="--white" />
-                    <Rectangle background="--black-light" size="450px"/>
-                    <Rectangle background="--white"  size="50px" />
+                    <Rectangle background="--black-light" size="450"/>
+                    <Rectangle background="--white"  size="50" />
                     <Rectangle background="--gray"/>
                 </section>
             </article>
 
             <section>
-                <Rectangle background="--black-light" size="50px"/>
+                <Rectangle background="--black-light" size="50"/>
                 
-                <Rectangle background="--gray-dark" size="250px"/>
-                <Rectangle background="--main-color" size="50px" />
+                <Rectangle background="--gray-dark" size="250"/>
+                <Rectangle background="--main-color" size="50" />
                 <Rectangle background="--white" />
-                <Rectangle background="--black-light" size="450px"/>
-                <Rectangle background="--white"  size="50px" />
+                <Rectangle background="--black-light" size="450"/>
+                <Rectangle background="--white"  size="50" />
                 <Rectangle background="--gray"/>
                 
                 <Rectangle background="--gray-dark" />
-                <Rectangle background="--gray" size="450px"/>
-                <Rectangle background="--white"  size="50px" />
+                <Rectangle background="--gray" size="450"/>
+                <Rectangle background="--white"  size="50" />
                 <Rectangle background="--black-light"/>
             </section>
             
