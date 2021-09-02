@@ -13,10 +13,12 @@ export const GlobalStyle = createGlobalStyle`
  @font-face{
      font-family: "NotoSans SC Regular";
      src: url(${NotoSansSC});
+     font-display: fallback;
  }
  @font-face{
      font-family: "NotoSans SC Bold";
      src: url(${NotoSansSCBold});
+     font-display: fallback;
  }
 
   /* General styles */
